@@ -10,7 +10,7 @@ import com.spring.employeemanager.model.Employee;
 @Repository
 public interface EmployeeRepo extends JpaRepository <Employee ,Long> {
 
-	void deleteEmployeeById(Long id);
+	void deleteById(Long id);
 
 	Optional<Employee> findEmployeeById(Long id);
 
